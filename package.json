@@ -1,19 +1,19 @@
 {
-  "name": "vue-amazing-ui",
+  "name": "bizarre-ui",
   "version": "0.0.39",
   "private": false,
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/vue-amazing-ui.umd.cjs",
-  "module": "./dist/vue-amazing-ui.js",
+  "main": "./dist/bizarre-ui.umd.cjs",
+  "module": "./dist/bizarre-ui.js",
   "exports": {
     "./dist/style.css": "./dist/style.css",
     "./css": "./dist/style.css",
     ".": {
-      "import": "./dist/vue-amazing-ui.js",
-      "require": "./dist/vue-amazing-ui.umd.cjs"
+      "import": "./dist/bizarre-ui.js",
+      "require": "./dist/bizarre-ui.umd.cjs"
     }
   },
   "scripts": {
