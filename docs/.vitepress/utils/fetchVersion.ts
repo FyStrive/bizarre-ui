@@ -15,7 +15,7 @@
   return fetch('https://raw.githubusercontent.com/themusecatcher/vue-amazing-ui/master/package.json')
 */
 export function fetchVersion () {
-  return fetch('https://api.github.com/repos/themusecatcher/vue-amazing-ui/contents/package.json?ref=master', {
+  return fetch('https://github.com/FyStrive/bizarre-ui/contents/package.json?ref=master', {
     headers: {
       // See https://docs.github.com/en/rest/overview/media-types
       Accept: 'application/vnd.github.v3.raw',

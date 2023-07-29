@@ -17,7 +17,7 @@ hero:
       link: /guide/features
     - theme: alt
       text: View on GitHub
-      link: https://github.com/themusecatcher/vue-amazing-ui
+      link: https://github.com/FyStrive/bizarre-ui
     - theme: alt
       text: View on NPM
       link: https://www.npmjs.com/package/vue-amazing-ui
@@ -38,6 +38,6 @@ import { onMounted } from 'vue'
 import { fetchVersion } from './.vitepress/utils/fetchVersion'
 
 onMounted(() => {
-  fetchVersion()
+  // fetchVersion()
 })
 </script>

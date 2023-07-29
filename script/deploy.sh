@@ -18,7 +18,7 @@ git add .
 git commit -m 'deploy'
 
 # 部署到 https://<username>.github.io/<repo>
-git push -f git@github.com:FyStrive/bizarre-ui.git master:github-pages
+git push -f https://github.com/FyStrive/bizarre-ui.git master:github-pages
 
 # 提交所有代码到github
 cd ../../../
