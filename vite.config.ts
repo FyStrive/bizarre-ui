@@ -50,7 +50,7 @@ export default defineConfig({
       // __dirname的值是vite.config.ts文件所在目录
       entry: resolve(__dirname, 'packages/index.ts'),  // entry是必需的，因为库不能使用HTML作为入口。
       name: 'VueAmazingUI', // 暴露的全局变量
-      fileName: 'vue-amazing-ui' // 输出的包文件名，默认是package.json的name选项
+      fileName: 'bizarre-ui' // 输出的包文件名，默认是package.json的name选项
     },
     rollupOptions: { // 自定义底层的Rollup打包配置
       // https://rollupjs.org/configuration-options/

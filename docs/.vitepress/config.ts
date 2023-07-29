@@ -39,7 +39,7 @@ export default defineConfig({
     algolia: { // algolia 搜索服务 与 内置 search 可二选一
       appId: 'SHDNEYGA8Z',
       apiKey: '91419401b0b0efd31b610e54e5b97249',
-      indexName: 'vue-amazing-ui'
+      indexName: 'bizarre-ui'
     },
 
     footer: {
