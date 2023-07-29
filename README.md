@@ -1,4 +1,4 @@
-# vue-amazing-ui
+# bizarre-ui
 
 _该组件库采用 `Vue3@3.3.4 `+ `TypeScript@4.7.4` + `Vite4.4.7` + `Less@4.1.3` 实现！_<br/> _所有组件样式 `CSS` 均使用 `box-sizing: border-box;` 模式！_<br/> _目前共有 `46` 个常用基础 `UI` 组件，以及 `10` 个常用工具函数，并且持续探索更新中...！_<br/> _开箱即用！_
 
@@ -9,11 +9,11 @@ _该组件库采用 `Vue3@3.3.4 `+ `TypeScript@4.7.4` + `Vite4.4.7` + `Less@4.1.
 ## Install & Use
 
 ```bash
-pnpm i vue-amazing-ui
+pnpm i bizarre-ui
 # or
-npm install vue-amazing-ui
+npm install bizarre-ui
 # or
-yarn add vue-amazing-ui
+yarn add bizarre-ui
 ```
 
 Import and register component
@@ -24,19 +24,19 @@ Import and register component
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import VueAmazingUI from 'vue-amazing-ui'
-import 'vue-amazing-ui/css'
+import VueAmazingUI from 'bizarre-ui'
+import 'bizarre-ui/css'
 
 const app = createApp(App)
-app.use(VueAmazingUI)
+app.use(BizarreUI)
 ```
 
 **Local**
 
 ```vue
 <script setup lang="ts">
-import { Button } from 'vue-amazing-ui'
-import 'vue-amazing-ui/css'
+import { Button } from 'bizarre-ui'
+import 'bizarre-ui/css'
 </script>
 ```
 
@@ -45,13 +45,13 @@ import 'vue-amazing-ui/css'
 - Get the project code
 
 ```sh
-git clone https://github.com/themusecatcher/vue-amazing-ui.git
+git clone https://github.com/themusecatcher/bizarre-ui.git
 ```
 
 - Install dependencies
 
 ```sh
-cd vue-amazing-ui
+cd bizarre-ui
 
 pnpm i
 ```
