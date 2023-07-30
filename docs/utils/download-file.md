@@ -1,9 +1,9 @@
 # 下载文件
 
-::: details  Show Source Code
+::: details Show Source Code
 
 ```ts
-function downloadFile (url: string, name: string) {
+function downloadFile(url: string, name: string) {
   var fileName = ''
   if (name) {
     fileName = name
@@ -42,7 +42,7 @@ function downloadFile (url: string, name: string) {
 
 ```vue
 <script setup lang="ts">
-import { downloadFile } from 'vue-amazing-ui'
+import { downloadFile } from 'bizarre-ui'
 
 donwloadFile('https://cdn.jsdelivr.net/gh/themusecatcher/resources@0.0.3/Markdown.pdf', 'Markdown')
 </script>
@@ -50,7 +50,7 @@ donwloadFile('https://cdn.jsdelivr.net/gh/themusecatcher/resources@0.0.3/Markdow
 
 ## Params
 
-参数 | 说明 | 类型 | 默认值 | 必传
--- | -- | -- | -- | --
-url | 文件地址 | string | - | true
-name | 自定义文件名，未传时，从文件地址中自动获取文件名称 | string | - | false
+| 参数 | 说明                                               | 类型   | 默认值 | 必传  |
+| ---- | -------------------------------------------------- | ------ | ------ | ----- |
+| url  | 文件地址                                           | string | -      | true  |
+| name | 自定义文件名，未传时，从文件地址中自动获取文件名称 | string | -      | false |

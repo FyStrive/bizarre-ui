@@ -8514,7 +8514,7 @@ const components = [
 const install = (app) => {
   components.forEach((component) => app.component(component.__name, component));
 };
-const VueAmazingUI = {
+const BizarreUI = {
   install
 };
 export {
@@ -8571,7 +8571,7 @@ export {
   cancelRaf,
   dateFormat,
   debounce,
-  VueAmazingUI as default,
+  BizarreUI as default,
   downloadFile,
   moneyFormat,
   rafTimeout,

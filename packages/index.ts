@@ -189,7 +189,7 @@ export {
   Waterfall
 }
 
-const VueAmazingUI = {
+const BizarreUI = {
   install
 }
-export default VueAmazingUI
+export default BizarreUI

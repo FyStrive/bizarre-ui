@@ -1,56 +1,65 @@
 {
-  "hash": "83fbafe2",
-  "browserHash": "4e9590c6",
+  "hash": "bfa3fa6e",
+  "browserHash": "7d053e14",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a51ec78e",
+      "fileHash": "4f33a92e",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "59303522",
+      "fileHash": "a24377fa",
       "needsInterop": false
     },
     "@vuepic/vue-datepicker": {
       "src": "../../../../node_modules/.pnpm/@vuepic+vue-datepicker@4.5.1_vue@3.3.4/node_modules/@vuepic/vue-datepicker/dist/vue-datepicker.js",
       "file": "@vuepic_vue-datepicker.js",
-      "fileHash": "23041f80",
+      "fileHash": "448d9f59",
       "needsInterop": false
     },
     "qrcode": {
       "src": "../../../../node_modules/.pnpm/qrcode@1.5.3/node_modules/qrcode/lib/browser.js",
       "file": "qrcode.js",
-      "fileHash": "270b9d4c",
+      "fileHash": "f00c3ec1",
       "needsInterop": true
     },
     "swiper": {
       "src": "../../../../node_modules/.pnpm/swiper@9.4.1/node_modules/swiper/swiper.esm.js",
       "file": "swiper.js",
-      "fileHash": "b1fa1140",
+      "fileHash": "429ced53",
       "needsInterop": false
     },
-    "vue-amazing-ui": {
-      "src": "../../../../node_modules/.pnpm/vue-amazing-ui@0.0.39/node_modules/vue-amazing-ui/dist/vue-amazing-ui.js",
-      "file": "vue-amazing-ui.js",
-      "fileHash": "ffd52f84",
+    "date-fns": {
+      "src": "../../../../node_modules/.pnpm/date-fns@2.30.0/node_modules/date-fns/esm/index.js",
+      "file": "date-fns.js",
+      "fileHash": "d22c2ec5",
+      "needsInterop": false
+    },
+    "bizarre-ui": {
+      "src": "../../../../node_modules/.pnpm/bizarre-ui@1.0.1/node_modules/bizarre-ui/dist/bizarre-ui.js",
+      "file": "bizarre-ui.js",
+      "fileHash": "b0e7d26d",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-FRLFTGA2": {
-      "file": "chunk-FRLFTGA2.js"
-    },
     "chunk-2FKCZR47": {
       "file": "chunk-2FKCZR47.js"
     },
-    "chunk-DHZVYEIX": {
-      "file": "chunk-DHZVYEIX.js"
+    "chunk-FRLFTGA2": {
+      "file": "chunk-FRLFTGA2.js"
+    },
+    "chunk-2S7FRH5U": {
+      "file": "chunk-2S7FRH5U.js"
     },
     "chunk-67UUJLDS": {
       "file": "chunk-67UUJLDS.js"
+    },
+    "chunk-SIFL4DJN": {
+      "file": "chunk-SIFL4DJN.js"
     },
     "chunk-UXIASGQL": {
       "file": "chunk-UXIASGQL.js"

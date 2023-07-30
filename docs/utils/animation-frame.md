@@ -1,10 +1,16 @@
 # 动画帧
 
-::: details  Show Source Code
+::: details Show Source Code
 
 ```typescript
 // @ts-ignore 兼容性requestAnimationFrame
-const requestAnimationFrame = typeof window !== 'undefined' ? window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame : () => {}
+const requestAnimationFrame =
+  typeof window !== 'undefined'
+    ? window.requestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.msRequestAnimationFrame
+    : () => {}
 // @ts-ignore 兼容性cancelAnimationFrame
 const cancelAnimationFrame = typeof window !== 'undefined' ? window.cancelAnimationFrame || window.mozCancelAnimationFrame : () => {}
 ```
@@ -17,13 +23,13 @@ const cancelAnimationFrame = typeof window !== 'undefined' ? window.cancelAnimat
 
 ## 基本使用
 
-*使用方法同官方用法*
+_使用方法同官方用法_
 
 - [MDN requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/window/requestAnimationFrame)
 - [MDN cancelAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/cancelAnimationFrame)
 
 ```vue
 <script setup lang="ts">
-import { requestAnimationFrame, cancelAnimationFrame } from 'vue-amazing-ui'
+import { requestAnimationFrame, cancelAnimationFrame } from 'bizarre-ui'
 </script>
 ```

@@ -8,6 +8,7 @@
 declare module '*.js'
 declare module '*.gz'
 declare module 'vue-amazing-ui'
+declare module 'bizarre-ui'
 interface Window {
   rafTimeout: Function
 }

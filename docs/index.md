@@ -1,16 +1,16 @@
 ---
 layout: home
 
-title: Vue Amazing UI
-titleTemplate: Amazing UI Components Library
+title: Vue Bizarre UI
+titleTemplate: Bizarre UI Components Library
 
 hero:
-  name: Vue Amazing UI
-  text: Amazing UI 组件库
+  name: Vue Bizarre UI
+  text: Bizarre UI 组件库
   tagline: 基于 Vue3 + TS + Vite 开发
   image:
     src: /logo-with-shadow.png
-    alt: Vue Amazing UI
+    alt: Bizarre UI
   actions:
     - theme: brand
       text: Get Started
@@ -20,7 +20,7 @@ hero:
       link: https://github.com/FyStrive/bizarre-ui
     - theme: alt
       text: View on NPM
-      link: https://www.npmjs.com/package/vue-amazing-ui
+      link: https://www.npmjs.com/package/bizarre-ui
 features:
   - icon: 🛠️
     title: 开发依赖

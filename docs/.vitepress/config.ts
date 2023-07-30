@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: `Vue Amazing UI`,
-  description: 'Amazing UI 组件库',
+  title: `Vue Bizarre UI`,
+  description: 'Bizarre UI 组件库',
   base: '/bizarre-ui/',
 
   head: [ // 网站图标
@@ -23,13 +23,6 @@ export default defineConfig({
     // 默认支持icon包括：'discord'|'facebook'|'github'|'instagram'|'linkedin'|'mastodon'|'slack'|'twitter'|'youtube'
     socialLinks: [
       { icon: 'github', link: 'https://github.com/FyStrive/bizarre-ui' },
-      // 自定义icon
-      // {
-      //   icon: {
-      //     svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>'
-      //   },
-      //   link: 'https://www.npmjs.com/package/vue-amazing-ui'
-      // }
     ],
 
     // search: { // vitepress 内置 search
@@ -39,7 +32,7 @@ export default defineConfig({
     algolia: { // algolia 搜索服务 与 内置 search 可二选一
       appId: 'SHDNEYGA8Z',
       apiKey: '91419401b0b0efd31b610e54e5b97249',
-      indexName: 'bizarre-ui'
+      indexName: 'vue-amazing-ui'
     },
 
     footer: {
@@ -54,7 +47,6 @@ export default defineConfig({
         text: '链接',
         items: [
           { text: 'My Github', link: 'https://github.com/FyStrive' },
-          { text: 'My CSDN', link: 'https://blog.csdn.net/Dandrose?type=blog' },
           { text: 'Front-end Notes', link: 'https://themusecatcher.github.io/front-end-notes/' },
           {
             items: [

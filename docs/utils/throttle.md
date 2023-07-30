@@ -2,12 +2,12 @@
 
 <br/>
 
-*如果短时间内大量触发同一事件，那么在函数执行一次之后，该函数在指定的时间（delay）期限内不再工作，直至过了这段时间才重新生效*
+_如果短时间内大量触发同一事件，那么在函数执行一次之后，该函数在指定的时间（delay）期限内不再工作，直至过了这段时间才重新生效_
 
-::: details  Show Source Code
+::: details Show Source Code
 
 ```ts
-function throttle (fn: Function, delay = 300): any {
+function throttle(fn: Function, delay = 300): any {
   var valid = true
   return function () {
     if (valid) {
@@ -30,7 +30,7 @@ function throttle (fn: Function, delay = 300): any {
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
-import { throttle } from 'vue-amazing-ui'
+import { throttle } from 'bizarre-ui'
 
 onMounted(() => {
   document.onscroll = throttle(showPosition, 1000)
@@ -47,12 +47,12 @@ function showPosition () {
 
 ## 基本使用
 
-*打开控制台查看输出*
+_打开控制台查看输出_
 
 ```vue
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
-import { throttle } from 'vue-amazing-ui'
+import { throttle } from 'bizarre-ui'
 
 onMounted(() => {
   document.onscroll = throttle(showPosition, 1000)
@@ -61,7 +61,7 @@ onUnmounted(() => {
   // 移除键盘切换事件
   document.onscroll = null
 })
-function showPosition () {
+function showPosition() {
   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
   console.log('滚动条位置：' + scrollTop)
 }
@@ -70,7 +70,7 @@ function showPosition () {
 
 ## Params
 
-参数 | 说明 | 类型 | 默认值 | 必传
--- | -- | -- | -- | --
-fn | 要执行的函数 | Function | - | true
-delay | 函数失效时长，单位ms | number | 300 | false
+| 参数  | 说明                  | 类型     | 默认值 | 必传  |
+| ----- | --------------------- | -------- | ------ | ----- |
+| fn    | 要执行的函数          | Function | -      | true  |
+| delay | 函数失效时长，单位 ms | number   | 300    | false |

@@ -1,27 +1,32 @@
 # 金额格式化
 
-::: details  Show Source Code
+::: details Show Source Code
 
 ```ts
-function moneyFormat (value: number|string, decimal = 2, split = ',') {
-  function thousandFormat (numStr: string): string {
+function moneyFormat(value: number | string, decimal = 2, split = ',') {
+  function thousandFormat(numStr: string): string {
     const len = numStr.length
     return len <= 3 ? numStr : thousandFormat(numStr.slice(0, len - 3)) + split + numStr.slice(len - 3, len)
   }
   const money = String(value)
-  if (isFinite(parseFloat(money))) { // num是数字
-    if (parseFloat(money) === 0) { // 为0
+  if (isFinite(parseFloat(money))) {
+    // num是数字
+    if (parseFloat(money) === 0) {
+      // 为0
       return parseFloat(money).toFixed(decimal)
-    } else { // 非0
+    } else {
+      // 非0
       var res = ''
       var dotIndex = money.indexOf('.')
-      if (dotIndex === -1) { // 整数
+      if (dotIndex === -1) {
+        // 整数
         if (decimal === 0) {
           res = thousandFormat(money)
         } else {
           res = thousandFormat(money) + '.' + '0'.repeat(decimal)
         }
-      } else { // 非整数
+      } else {
+        // 非整数
         // 四舍五入 Math.round()：正数时4舍5入，负数时5舍6入
         // Math.round(1.5) = 2
         // Math.round(-1.5) = -1
@@ -51,7 +56,7 @@ function moneyFormat (value: number|string, decimal = 2, split = ',') {
 
 ```vue
 <script setup lang="ts">
-import { moneyFormat } from 'vue-amazing-ui'
+import { moneyFormat } from 'bizarre-ui'
 
 moneyFormat(123456789.87654321, 2, ',') // 123,456,789.88
 </script>
@@ -59,8 +64,8 @@ moneyFormat(123456789.87654321, 2, ',') // 123,456,789.88
 
 ## Params
 
-参数 | 说明 | 类型 | 默认值 | 必传
--- | -- | -- | -- | --
-value | 需要格式化的目标数字 | number &#124; string | - | true
-decimal | 保留几位小数 | number | 2 | false
-split | 千分位分隔符 | string | ',' | false
+| 参数    | 说明                 | 类型                 | 默认值 | 必传  |
+| ------- | -------------------- | -------------------- | ------ | ----- |
+| value   | 需要格式化的目标数字 | number &#124; string | -      | true  |
+| decimal | 保留几位小数         | number               | 2      | false |
+| split   | 千分位分隔符         | string               | ','    | false |

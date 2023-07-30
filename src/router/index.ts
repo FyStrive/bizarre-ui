@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { setDocumentTitle, webTitle } from '@/utils/util'
 import { rafTimeout } from '../../packages'
 import GlobalLayout from '@/layouts/GlobalLayout.vue'
@@ -308,7 +308,7 @@ export const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL), // 使用history模式，hash模式：createWebHashHistory
+  history: createWebHashHistory(import.meta.env.BASE_URL), // 使用history模式，hash模式：createWebHashHistory
   routes, // `routes: routes` 的缩写
   scrollBehavior(to, from, savedPosition) {
     return new Promise((resolve, reject) => {
