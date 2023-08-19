@@ -30,9 +30,12 @@ export default defineConfig({
     // },
 
     algolia: { // algolia 搜索服务 与 内置 search 可二选一
-      appId: 'SHDNEYGA8Z',
-      apiKey: '91419401b0b0efd31b610e54e5b97249',
-      indexName: 'vue-amazing-ui'
+      appId: 'Q8KCLYF15A',
+      apiKey: '6a92e3780b1c1aeb173778f620f144b0',
+      indexName: 'bizarre-ui',
+      // insights: true, // Optional, automatically send insights when user interacts with search results
+      // container: '### REPLACE ME WITH A CONTAINER (e.g. div) ###'
+      // debug: false // Set debug to true if you want to inspect the modal
     },
 
     footer: {

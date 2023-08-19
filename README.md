@@ -42,12 +42,6 @@ import 'bizarre-ui/css'
 
 ## Project
 
-- Get the project code
-
-```sh
-git clone https://github.com/themusecatcher/bizarre-ui.git
-```
-
 - Install dependencies
 
 ```sh
